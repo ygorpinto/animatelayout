@@ -13,7 +13,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to left,#F69886,#EB5488);
+    background: linear-gradient(to left,#162891,#e7266a);
     z-index: -1;
 }
 
@@ -45,6 +45,7 @@ section {
     height: 60vh;
     width: 100vw;
     position: relative;
+    box-shadow: 3px 5px 20px rgb(131, 29, 122);
 }
 
 .hero img {
@@ -73,4 +74,29 @@ section {
     top: 0;
     left: 0;
     opacity: 0.3;
+}
+
+@media screen and (max-width:450px)
+{
+    .hero {
+        top: 50%;
+        height: 40vh;
+    }
+
+    .hero::after{
+        height:40vh;
+    }
+
+    .hero img {
+        height: 40vh;
+    }
+
+    .headline {
+        font-size: 1.6rem;
+    }
+
+    section {
+        display: flex;
+        height: 40vh;
+    }
 }
